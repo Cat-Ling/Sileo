@@ -32,10 +32,10 @@ jobs:
         run: sudo xcode-select --switch /Applications/Xcode_15.4.app
 
       - name: Build Sileo (iphoneos-arm)
-        run: make clean package DEBUG=0 ALL_BOOTSTRAPS=1 NIGHTLY=$NIGHTLY SILEO_PLATFORM=iphoneos-arm
+        run: make clean package V=1 DEBUG=0 ALL_BOOTSTRAPS=1 NIGHTLY=$NIGHTLY SILEO_PLATFORM=iphoneos-arm
 
       - name: Build Sileo (iphoneos-arm64)
-        run: make clean package DEBUG=0 ALL_BOOTSTRAPS=1 NIGHTLY=$NIGHTLY SILEO_PLATFORM=iphoneos-arm64
+        run: make clean package V=1 DEBUG=0 ALL_BOOTSTRAPS=1 NIGHTLY=$NIGHTLY SILEO_PLATFORM=iphoneos-arm64
 
       - name: Upload packages
         uses: actions/upload-artifact@v4
