@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "تأكيد تلقائي لترقية جميع الاختصارات";
 "Swipe_Actions" = "إجراءات السحب";
 "Show_Provisional" = "إظهار الحزم من Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "إظهار التحديثات المُتجاهلة";
 "Developer_Mode" = "وضع المطور";
 "Pog_Developer" = "أنت الآن مطور!";

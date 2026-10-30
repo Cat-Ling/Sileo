@@ -160,6 +160,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Confirmació automàtica de l'actualització de totes les dreceres";
 "Swipe_Actions" = "Accions de lliscar";
 "Show_Provisional" = "Mostra els paquets de Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Mostra les actualitzacions ignorades";
 "Developer_Mode" = "Mode de desenvolupador";
 "Pog_Developer" = "Ara ets un desenvolupador!";

@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "\"Összes frissítése\" automatikus megerősítése";
 "Swipe_Actions" = "Csúsztató műveletek";
 "Show_Provisional" = "Canister csomagok megjelenítése";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Figyelmen kívül hagyott frissítések megjelenítése";
 "Developer_Mode" = "Fejlesztői mód";
 "Pog_Developer" = "Mostantól már fejlesztő vagy!";

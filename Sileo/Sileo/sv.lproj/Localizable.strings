@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Bekräfta Automatiskt Uppgradera Allt Genväg";
 "Swipe_Actions" = "Svepåtgärder";
 "Show_Provisional" = "Visa Paket Från Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Visa Ignorerade Uppdateringar";
 "Developer_Mode" = "Utvecklar Läge";
 "Pog_Developer" = "Du är nu en utvecklare!";

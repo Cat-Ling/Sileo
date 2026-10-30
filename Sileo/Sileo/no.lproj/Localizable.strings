@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Automatisk Bekreft Oppgrader Alle Snarvei";
 "Swipe_Actions" = "Sveipe-handlinger";
 "Show_Provisional" = "Vis pakker fra Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Vis ignorerte oppdateringer";
 "Developer_Mode" = "Utviklermodus";
 "Pog_Developer" = "Du er nå en utvikler!";

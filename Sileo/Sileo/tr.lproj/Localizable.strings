@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Otomatik Hepsini Güncelleme Kestirmesi";
 "Swipe_Actions" = "Kaydırma İşlemleri";
 "Show_Provisional" = "Canister'dan Paketleri Göster";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Yoksayılan Güncellemeleri Göster";
 "Developer_Mode" = "Geliştirici Modu";
 "Pog_Developer" = "Artık bir geliştiricisiniz!";

@@ -336,16 +336,19 @@ final class PackageListManager {
                 return authorEmail == authorEmail
             }
         }
+        if PackageListManager.hidePaidPackages && packagePrepend == nil
+            && identifier != "--installed" && identifier != "--wishlist" {
+            packageList.removeAll { $0.commercial }
+        }
         if let searchQuery = search,
            !searchQuery.isEmpty {
-            let lowercased = searchQuery.lowercased()
+            // Every whitespace-separated term must match at least one field, so "dark theme" finds
+            // packages whose description mentions both words even when the name contains neither.
+            let terms = searchQuery.lowercased().split(whereSeparator: \.isWhitespace).map(String.init)
             packageList.removeAll { package in
-                // check if the user search term is in the package ID, description or in the author / maintainer name
-                for field in [package.package, package.name, package.author?.name, package.maintainer?.name] {
-                    if field?.localizedStandardContains(lowercased) ?? false { return false }
-                }
-                
-                return true
+                let fields = [package.package, package.name, package.author?.name, package.maintainer?.name,
+                              package.packageDescription, package.section, package.rawControl["tag"]].compactMap { $0 }
+                return !terms.allSatisfy { term in fields.contains { $0.localizedStandardContains(term) } }
             }
         }
         // Remove Any Duplicates
@@ -373,10 +376,10 @@ final class PackageListManager {
                 if let pkg2 = obj2.name?.lowercased() {
                     if let searchQuery = search?.lowercased(),
                        !searchQuery.isEmpty {
-                        if pkg1.hasPrefix(searchQuery) && !pkg2.hasPrefix(searchQuery) {
-                            return true
-                        } else if !pkg1.hasPrefix(searchQuery) && pkg2.hasPrefix(searchQuery) {
-                            return false
+                        let rank1 = Self.nameMatchRank(name: pkg1, query: searchQuery)
+                        let rank2 = Self.nameMatchRank(name: pkg2, query: searchQuery)
+                        if rank1 != rank2 {
+                            return rank1 < rank2
                         }
                         
                         let diff1 = pkg1.count - searchQuery.count
@@ -398,6 +401,17 @@ final class PackageListManager {
             return false
         }
         return tmp
+    }
+    
+    /// Name-prefix hits rank above name-substring hits, which rank above matches found only in other fields.
+    private static func nameMatchRank(name: String, query: String) -> Int {
+        if name.hasPrefix(query) { return 0 }
+        if name.contains(query) { return 1 }
+        return 2
+    }
+    
+    static var hidePaidPackages: Bool {
+        UserDefaults.standard.bool(forKey: "HidePaidPackages", fallback: false)
     }
     
     public func newestPackage(identifier: String, repoContext: Repo?, packages: [Package]? = nil) -> Package? {

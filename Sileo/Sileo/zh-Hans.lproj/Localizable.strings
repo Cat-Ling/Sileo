@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "触感触控全部更新自动确认";
 "Swipe_Actions" = "滑动动作";
 "Show_Provisional" = "搜索增强 （Canister）";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "显示忽略的更新";
 "Developer_Mode" = "开发者模式";
 "Pog_Developer" = "您现在是开发者！";

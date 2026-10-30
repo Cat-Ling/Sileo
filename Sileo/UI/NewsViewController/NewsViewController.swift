@@ -75,6 +75,10 @@ class NewsViewController: SileoViewController, UICollectionViewDataSource, UICol
                                                selector: #selector(reloadData),
                                                name: NewsViewController.reloadNotification,
                                                object: nil)
+        NotificationCenter.default.addObserver(weakSelf as Any,
+                                               selector: #selector(reloadData),
+                                               name: Notification.Name("HidePaidPackages"),
+                                               object: nil)
         NotificationCenter.default.addObserver(weakSelf as Any, selector: #selector(self.reloadStates(_:)), name: PackageListManager.stateChange, object: nil)
     }
     
@@ -190,11 +194,12 @@ extension NewsViewController { // Get Data
             }
 
             // Find each package and organise into a nice dictionary
+            let hidePaid = PackageListManager.hidePaidPackages
             for key in packageCache.keys {
                 let repo = RepoManager.shared.repoList.first(where: { RepoManager.shared.cacheFile(named: "Packages", for: $0).lastPathComponent == key })
                 let localPackages = packageCache[key] ?? []
                 for package in localPackages {
-                    if let package2 = repo?.packageDict[package.0] {
+                    if let package2 = repo?.packageDict[package.0], !(hidePaid && package2.commercial) {
                         package2.userRead = package.2
                         if var packages2 = packages[package.1] {
                             packages2.append(package2)

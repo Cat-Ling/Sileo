@@ -139,6 +139,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Auto Confirm Upgrade All Shortcut";
 "Swipe_Actions" = "Swipe Actions";
 "Show_Provisional" = "Show Packages from Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 
 "Sileo_Light" = "Sileo Light";
 "Sileo_Dark" = "Sileo Dark";

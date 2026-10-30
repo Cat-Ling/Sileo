@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "すべてのアップデートを自動的に実行する3D touch ショートカット";
 "Swipe_Actions" = "スワイプアクション";
 "Show_Provisional" = "Canisterからのパッケージを表示";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "無視したアップデートを表示";
 "Developer_Mode" = "開発者モード";
 "Pog_Developer" = "開発者モードに切り替わりました！";

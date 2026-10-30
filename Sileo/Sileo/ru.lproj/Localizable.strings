@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Автоматическое подтверждение обновления всех ярлыков";
 "Swipe_Actions" = "Смахнуть";
 "Show_Provisional" = "Показать предварительный пакет";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Показать игнорируемые обновления";
 "Developer_Mode" = "Режим разработчика";
 "Pog_Developer" = "Теперь ты разработчик!";

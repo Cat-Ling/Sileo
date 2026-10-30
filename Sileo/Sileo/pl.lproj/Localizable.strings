@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Skrót automatycznego potwierdzania \"Zaaktualizuj wszystko\"";
 "Swipe_Actions" = "Gesty";
 "Show_Provisional" = "Pokaż Pakiety z Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Pokaż Ignorowane Aktualizacje";
 "Developer_Mode" = "Tryb Dewelopera";
 "Pog_Developer" = "Jesteś teraz deweloperem!";

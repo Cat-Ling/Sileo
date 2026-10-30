@@ -143,6 +143,9 @@ class PackageListViewController: SileoViewController, UIGestureRecognizerDelegat
         NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData),
                                                name: PackageListManager.reloadNotification,
                                                object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData),
+                                               name: Notification.Name("HidePaidPackages"),
+                                               object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.reloadStates(_:)), name: PackageListManager.stateChange, object: nil)
         if self.showUpdates {
             NotificationCenter.default.addObserver(self, selector: #selector(self.reloadUpdates),

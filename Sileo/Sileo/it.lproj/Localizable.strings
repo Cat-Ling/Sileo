@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Conferma In Automatico \"Aggiorna Tutto\"";
 "Swipe_Actions" = "Azioni di Scorrimento";
 "Show_Provisional" = "Mostra i Pacchetti del Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Mostra gli Aggiornamenti Ignorati";
 "Developer_Mode" = "Modalità Sviluppatore";
 "Pog_Developer" = "Ora sei uno sviluppatore!";

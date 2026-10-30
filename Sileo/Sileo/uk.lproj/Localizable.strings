@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Автоматично підтверджувати шорткат \"Оновити все\"";
 "Swipe_Actions" = "Дії по свайпу";
 "Show_Provisional" = "Показувати пакети з Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Показувати ігноровані оновлення";
 "Developer_Mode" = "Режим розробника";
 "Pog_Developer" = "Ви тепер розробник!";

@@ -93,7 +93,7 @@ extension SettingsViewController { // UITableViewDataSource
         case 1: // Themes
             return 5
         case 2:
-            return 11
+            return 12
         case 3: // About section
             return 5
         default:
@@ -204,6 +204,10 @@ extension SettingsViewController { // UITableViewDataSource
                 cell.amyPogLabel.text = String(localizationKey: "Auto_Confirm_Upgrade_All_Shortcut")
                 cell.defaultKey = "AutoConfirmUpgradeAllShortcut"
             case 10:
+                cell.amyPogLabel.text = String(localizationKey: "Hide_Paid_Packages")
+                cell.fallback = false
+                cell.defaultKey = "HidePaidPackages"
+            case 11:
                 cell.amyPogLabel.text = String(localizationKey: "Developer_Mode")
                 cell.fallback = false
                 cell.defaultKey = "DeveloperMode"

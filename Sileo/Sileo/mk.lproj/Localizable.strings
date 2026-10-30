@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Auto Confirm Upgrade All Shortcut";
 "Swipe_Actions" = "Swipe Actions";
 "Show_Provisional" = "Show Packages From Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Show Ignored Updates";
 "Developer_Mode" = "Developer Mode";
 "Pog_Developer" = "You are now a developer!";

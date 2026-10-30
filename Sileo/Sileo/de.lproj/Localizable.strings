@@ -161,6 +161,7 @@ Die Quelle ist möglicherweise offline oder du hast sie falsch eingegeben. Möch
 "Auto_Confirm_Upgrade_All_Shortcut" = "Automatisches Bestätigen beim Update aller Pakete";
 "Swipe_Actions" = "Wischgesten";
 "Show_Provisional" = "Pakete von Canister anzeigen";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Zeige ignorierte Updates";
 "Developer_Mode" = "Entwicklermodus";
 "Pog_Developer" = "Du bist jetzt ein Entwickler!";

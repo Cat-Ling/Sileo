@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "Confirmation automatique lors de la mise à jour de tous les paquets";
 "Swipe_Actions" = "Actions de balayage";
 "Show_Provisional" = "Afficher les paquets trouvés sur Canister";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "Montrer les mises à jour ignorée";
 "Developer_Mode" = "Mode développeur";
 "Pog_Developer" = "Vous êtes maintenant un développeur!";

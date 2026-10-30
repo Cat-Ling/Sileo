@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "自動確認更新所有捷徑";
 "Swipe_Actions" = "滑動動作";
 "Show_Provisional" = "顯示來自 Canister 的套件";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "顯示已忽略更新";
 "Developer_Mode" = "開發者模式";
 "Pog_Developer" = "您現在已成為開發者！";

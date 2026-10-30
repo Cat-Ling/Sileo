@@ -159,6 +159,7 @@
 "Auto_Confirm_Upgrade_All_Shortcut" = "ئۆتۆماتیکی پشتڕاستکردنەوەی بەرزکردنەوەی هەموو شۆرتکەتێک";
 "Swipe_Actions" = "کردارەکانی بەلادا";
 "Show_Provisional" = "پاکێجەکان لە کانستەرەوە پیشان بدە";
+"Hide_Paid_Packages" = "Hide Paid Packages";
 "Show_Ignored_Updates" = "نیشاندانی وەشانە گوێپێنەدراوەکان";
 "Developer_Mode" = "دۆخی گەشەپێدەر";
 "Pog_Developer" = "تۆ ئێستا گەشەپێدەریت!";
