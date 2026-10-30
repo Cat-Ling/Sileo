@@ -17,6 +17,8 @@ jobs:
     env:
       # Branch builds produce the side-by-side Nightly package; tag builds produce the stable package.
       NIGHTLY: ${{ startsWith(github.ref, 'refs/tags/') && '0' || '1' }}
+      # Xcode 15 builds SwiftPM dependencies for iOS 12.0 minimum, so the app target must match.
+      XCODEBUILD_FLAGS: IPHONEOS_DEPLOYMENT_TARGET=12.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
